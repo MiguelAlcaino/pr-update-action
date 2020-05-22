@@ -6,6 +6,8 @@ jobs:
   pr_update_text:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: Update name step
         uses: ./
         with:
