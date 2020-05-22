@@ -66,7 +66,7 @@ async function run() {
     if (updateBody) {
       request.body = inputs.replaceBody
       ? processedBody
-      : processedBody.concat('\n'.repeat(inputs.bodyPrefixNewlineCount), body);
+      : processedBody.concat(body, '\n'.repeat(inputs.bodyPrefixNewlineCount));
       core.debug(`new body: ${request.body}`);
     } else {
       core.warning('PR body is up to date already - no updates made');
