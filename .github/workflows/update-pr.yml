@@ -14,11 +14,11 @@ jobs:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
           branch-regex: '.'
           lowercase-branch: true
-          title-template: "[updated-by-action]"
+          title-template: ""
           replace-title: false
           title-prefix-space: true
           uppercase-title: false
-          body-template: "[Updated by Pull Request Updater action]"
+          body-template: "[Download the Charles thingy %branch%](https://bullshit.com/branch/%branch%)"
           replace-body: false
           body-prefix-newline-count: 2
           uppercase-body: false
