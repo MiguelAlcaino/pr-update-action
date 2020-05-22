@@ -6,7 +6,8 @@ jobs:
   pr_update_text:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/pr-update-action@v1.1.1
+      - name: Update name step
+        uses: ./
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
           branch-regex: '.'
